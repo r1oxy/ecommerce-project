@@ -12,55 +12,54 @@
 </head>
 
 <body>
-    <header class="text-center d-flex align-items-center justify-content-center">
-        Free standard shipping • Free standard shipping • Free standard shipping • Free standard shipping • Free standard shipping • Free standard shipping • Free standard shipping • Free standard shipping • Free standard shipping • Free standard shipping • Free standard shipping • Free standard shipping
-    </header>
-    <nav class="navbar navbar-expand-lg container">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">IMPACT</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <div class="navbar-nav mx-auto"> <!-- Use mx-auto class to center align the elements -->
-                    <span class="nav-item">
-                        <a class="nav-link active" href="#">Shop</a>
-                    </span>
-                    <span class="nav-item">
-                        <a class="nav-link" href="#">Collaborations</a>
-                    </span>
-                    <span class="nav-item">
-                        <a class="nav-link" href="#">Compare</a>
-                    </span>
-                    <span class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </span>
-                    <span class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </span>
-                    <span class="nav-item">
-                        <a class="nav-link" href="#">Theme Features</a>
-                    </span>
-                </div>
-                <span class="navbar-text">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Select Currency
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">$</a></li>
-                            <li><a class="dropdown-item" href="#">Euro</a></li>
-                            <li><a class="dropdown-item" href="#">JPY</a></li>
-                            <li><a class="dropdown-item" href="#">GBP</a></li>
-                        </ul>
+        <header class="text-center d-flex align-items-center justify-content-center">
+            Free standard shipping
+        </header>
+        <nav class="navbar navbar-expand-lg container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">IMPACT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <div class="navbar-nav mx-auto">
+                        <!-- Use mx-auto class to center align the elements -->
+                        <span class="nav-item">
+                            <a class="nav-link" href="products.html">Shop</a>
+                        </span>
+                        <span class="nav-item">
+                            <a class="nav-link" href="electronics.html">Electronics</a>
+                        </span>
+                        <span class="nav-item">
+                            <a class="nav-link" href="jewelery.html">Jewelery</a>
+                        </span>
+                        <span class="nav-item">
+                            <a class="nav-link" href="mens_clothing.html">Men's clothing</a>
+                        </span>
+                        <span class="nav-item">
+                            <a class="nav-link" href="womens_clothing.html">Women's clothing</a>
+                        </span>
                     </div>
-                    <span>Search</span>
-                    <span>Cart</span>
-                </span>
+                    <span class="navbar-text">
+                        <div class="dropdown">
+                            <button class="dropdown-button">Select Currency</button>
+                            <div class="dropdown-content">
+                                <button id="convert$" class="dropdown-item">Convert to $</button>
+                                <button id="convertEUR" class="dropdown-item">Convert to €</button>
+                                <button id="convertGBP" class="dropdown-item">Convert to £</button>
+                                <button id="convertCHF" class="dropdown-item">Convert to CHF</button>
+                            </div>
+                        </div>
+                        <a href="cart.html">
+                            <i class="bi bi-cart3"></i>
+                        </a>
+        
+                    </span>
+        
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     <section>
         <section class="container main_container d-flex flex-column justify-content-center">
             <p>Introducing the MW08 Sport</p>
@@ -135,99 +134,36 @@
     </section>
     <section class="best_sellers container my-5">
         <div class="d-flex justify-content-between">
-            <span class="fs-1 fw-bolder">Best Sellers</span>
+            <span class="fs-1 fw-bolder">Best electronics</span>
             <span>View all <i class="bi bi-arrow-up-right-circle"></i>
             </span>
         </div>
-        <div class="row best_sellers_row">
-            <div class="card">
-                <div class="cards_preview">
-                    <img src="./img/img_2.webp" class="prd-img-1" alt="..." height="300px">
-                    <img src="./img/img_3.webp" class="prd-img-2" alt="..." height="300px">
+        <div class="row best_sellers_row products">
+            <template id="products_template">
+                <div class="card">
+                    <div class="cards_preview">
+                        <img src="./img/img_2.webp" class="prd-img-1" alt="..." height="300px" style="margin: 1rem 0;">
+                        <img src="https://placeholder.co/1000x1000/FFF" class="prd-img-2" alt="..." height="300px" tyle="margin: 1rem 0;">
+                    </div>
+                    <button class="btn btn-dark">
+                        + Quick add
+                    </button>
+                    <div class="card-body">
+                        <h5 class="card-title fs-6 d-flex justify-content-between row">
+                            <span class="col-9 px-0 ps-3 prd_name">
+                                MH40 Wireless (Silver Metal / Navy Coated Canvas)
+                            </span>
+                            <span class="col-3 px-0 d-flex justify-content-end pe-3">
+                                <span class="rating">4.3</span>
+                                <i class="bi bi-star-fill text-warning ms-1"></i>
+                            </span>
+                            
+                        </h5>
+                        <p class="price">150.50$</p>
+                    </div>
                 </div>
-                <button class="btn btn-dark">
-                    + Quick add
-                </button>
-                <div class="card-body">
-                    <h5 class="card-title fs-6 d-flex justify-content-between row">
-                        <span class="col-9 px-0 ps-3">
-                            MH40 Wireless (Silver Metal / Navy Coated Canvas)
-                        </span>
-                        <span class="col-3 px-0 d-flex justify-content-end pe-3">
-                            <span>4.3</span>
-                            <i class="bi bi-star-fill text-warning ms-1"></i>
-                        </span>
-                        
-                    </h5>
-                    <p class="price">150.50$</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="cards_preview">
-                    <img src="./img/img_2.webp" class="prd-img-1" alt="..." height="300px">
-                    <img src="./img/img_3.webp" class="prd-img-2" alt="..." height="300px">
-                </div>
-                <button class="btn btn-dark">
-                    + Quick add
-                </button>
-                <div class="card-body">
-                    <h5 class="card-title fs-6 d-flex justify-content-between row">
-                        <span class="col-9 px-0 ps-3">
-                            MH40 Wireless (Silver Metal / Navy Coated Canvas)
-                        </span>
-                        <span class="col-3 px-0 d-flex justify-content-end pe-3">
-                            <span>4.3</span>
-                            <i class="bi bi-star-fill text-warning ms-1"></i>
-                        </span>
-            
-                    </h5>
-                    <p class="price">150.50$</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="cards_preview">
-                    <img src="./img/img_2.webp" class="prd-img-1" alt="..." height="300px">
-                    <img src="./img/img_3.webp" class="prd-img-2" alt="..." height="300px">
-                </div>
-                <button class="btn btn-dark">
-                    + Quick add
-                </button>
-                <div class="card-body">
-                    <h5 class="card-title fs-6 d-flex justify-content-between row">
-                        <span class="col-9 px-0 ps-3">
-                            MH40 Wireless (Silver Metal / Navy Coated Canvas)
-                        </span>
-                        <span class="col-3 px-0 d-flex justify-content-end pe-3">
-                            <span>4.3</span>
-                            <i class="bi bi-star-fill text-warning ms-1"></i>
-                        </span>
-            
-                    </h5>
-                    <p class="price">150.50$</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="cards_preview">
-                    <img src="./img/img_2.webp" class="prd-img-1" alt="..." height="300px">
-                    <img src="./img/img_3.webp" class="prd-img-2" alt="..." height="300px">
-                </div>
-                <button class="btn btn-dark">
-                    + Quick add
-                </button>
-                <div class="card-body">
-                    <h5 class="card-title fs-6 d-flex justify-content-between row">
-                        <span class="col-9 px-0 ps-3">
-                            MH40 Wireless (Silver Metal / Navy Coated Canvas)
-                        </span>
-                        <span class="col-3 px-0 d-flex justify-content-end pe-3">
-                            <span>4.3</span>
-                            <i class="bi bi-star-fill text-warning ms-1"></i>
-                        </span>
-            
-                    </h5>
-                    <p class="price">150.50$</p>
-                </div>
-            </div>
+            </template>
+           
         </div>
     </section>
     <section class="container mw08_section">
@@ -390,7 +326,7 @@
             <div style="grid-row: span 2;">
                 <p>IMPACT</p>
                 <p>Sign up for news, updates & 10% off your first order.</p>
-                <input type="text" placeholder="test test test " class="mb-4">
+                <input type="text" placeholder="Type here..." class="mb-4">
                 <button class="btn px-2"><i class="bi bi-arrow-right-short"></i></button>
                 <div class="socials d-flex gap-4 fs-5">
                     <i class="bi bi-facebook"></i>
@@ -436,6 +372,33 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 
+
+
+    <script>
+        fetch('https://fakestoreapi.com/products/category/electronics?limit=4')
+            .then(response => response.json())
+            .then(data => {
+                const productTemplate = document.querySelector('#products_template');
+                const productsContainer = document.querySelector(".products");
+
+                data.forEach(product => {
+                    const productInstance = productTemplate.content.cloneNode(true);
+
+                    productInstance.querySelector('.prd_name').textContent = product.title;
+                    productInstance.querySelector('.prd-img-1').src = product.image;
+                    productInstance.querySelector('.price').textContent = '$' + product.price;
+                    productInstance.querySelector('.rating').textContent = product.rating.rate;
+
+                    productsContainer.appendChild(productInstance);
+                })
+        })
+        .catch (error => {
+                console.log(error)
+            })
+        
+        
+    </script>
+
     <script>
 
         let row = document.querySelector('.dropdowns-child .row');
@@ -451,6 +414,7 @@
             dropdownBtn.classList.toggle('text-white');
         }
     </script>
+    
 </body>
 
 </html>
